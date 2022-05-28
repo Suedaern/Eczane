@@ -44,3 +44,4 @@ C:\Users\sueda\OneDrive\Belgeler\GitHub\Eczane\girisekrani\girisekrani\obj\Debug
 C:\Users\sueda\OneDrive\Belgeler\GitHub\Eczane\girisekrani\girisekrani\obj\Debug\girisekrani.csproj.CoreCompileInputs.cache
 C:\Users\sueda\OneDrive\Belgeler\GitHub\Eczane\girisekrani\girisekrani\obj\Debug\girisekrani.exe
 C:\Users\sueda\OneDrive\Belgeler\GitHub\Eczane\girisekrani\girisekrani\obj\Debug\girisekrani.pdb
+C:\Users\sueda\OneDrive\Belgeler\GitHub\Eczane\girisekrani\girisekrani\obj\Debug\girisekrani.stokekle.resources

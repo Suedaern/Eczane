@@ -24,10 +24,7 @@ namespace girisekrani
             this.Hide();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            // veritabanından ilacı arayıp bulacak
-        }
+        
 
         private void button3_Click(object sender, EventArgs e)
         {

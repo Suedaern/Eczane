@@ -109,7 +109,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(258, 300);
+            this.textBox1.Location = new System.Drawing.Point(267, 236);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 22);
             this.textBox1.TabIndex = 8;
@@ -118,7 +118,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(229, 240);
+            this.label4.Location = new System.Drawing.Point(232, 180);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(180, 18);
             this.label4.TabIndex = 9;
@@ -126,12 +126,13 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(309, 402);
+            this.button2.Location = new System.Drawing.Point(267, 402);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 40);
             this.button2.TabIndex = 10;
             this.button2.Text = "Güncelle";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // sifredgstr
             // 

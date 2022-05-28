@@ -10,28 +10,18 @@ using System.Windows.Forms;
 
 namespace girisekrani
 {
-    public partial class stok : Form
+    public partial class stokekle : Form
     {
-        public stok()
+        public stokekle()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            anasayfa anasayfa = new anasayfa();
-            anasayfa.Show();
+            stok stok = new stok();
+            stok.Show();
             this.Hide();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            //veritabanından girilen ilacı bulu ekranda gösterecek
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

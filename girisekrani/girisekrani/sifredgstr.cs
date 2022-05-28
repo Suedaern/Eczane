@@ -23,5 +23,13 @@ namespace girisekrani
             ayarlar.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Şifre güncellendi");
+            ayarlar ayarlar = new ayarlar();
+            ayarlar.Show();
+            this.Hide();
+        }
     }
 }

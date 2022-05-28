@@ -29,11 +29,7 @@ namespace girisekrani
             
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            //veritabanından hastanın kaydına götürecek
-        }
-
+        
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Kaydedildi");
