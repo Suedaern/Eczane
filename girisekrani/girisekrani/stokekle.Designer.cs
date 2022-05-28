@@ -92,14 +92,14 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(178, 187);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(121, 22);
             this.textBox1.TabIndex = 5;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(178, 237);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.Size = new System.Drawing.Size(121, 22);
             this.textBox2.TabIndex = 6;
             // 
             // button2
@@ -126,7 +126,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "stokekle";
-            this.Text = "stokekle";
+            this.Text = "Stok Ekle";
             this.ResumeLayout(false);
             this.PerformLayout();
 

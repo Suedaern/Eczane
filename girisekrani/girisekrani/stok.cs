@@ -31,7 +31,9 @@ namespace girisekrani
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            stokekle stokekle = new stokekle();
+            stokekle.Show();
+            this.Hide();
         }
     }
 }

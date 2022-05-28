@@ -123,28 +123,28 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(204, 190);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(139, 22);
             this.textBox1.TabIndex = 7;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(204, 230);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.Size = new System.Drawing.Size(139, 22);
             this.textBox2.TabIndex = 8;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(204, 275);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
+            this.textBox3.Size = new System.Drawing.Size(139, 22);
             this.textBox3.TabIndex = 9;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(204, 319);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
+            this.textBox4.Size = new System.Drawing.Size(139, 22);
             this.textBox4.TabIndex = 10;
             // 
             // label7
@@ -199,7 +199,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "kayit";
-            this.Text = "kayit";
+            this.Text = "Kayıt";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace girisekrani
 {
-    public partial class hstblg : Form
+    public partial class satis : Form
     {
-        public hstblg()
+        public satis()
         {
             InitializeComponent();
         }
@@ -24,21 +24,9 @@ namespace girisekrani
             this.Hide();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            //veritabanından girilen hastayı arayıp ekranda gösterecek
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            hstkyt hstkyt = new hstkyt();
-            hstkyt.Show();
-            this.Hide();
+            //stoktan alınan adet kadar ilaçları düşecek 
         }
     }
 }

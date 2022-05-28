@@ -61,6 +61,11 @@ namespace girisekrani
 
         }
 
-       
+        private void button6_Click(object sender, EventArgs e)
+        {
+            satis satis = new satis();
+            satis.Show();
+            this.Hide();
+        }
     }
 }

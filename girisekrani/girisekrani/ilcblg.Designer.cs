@@ -361,7 +361,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(184, 511);
+            this.button3.Location = new System.Drawing.Point(217, 526);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 35);
             this.button3.TabIndex = 19;
@@ -374,7 +374,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ClientSize = new System.Drawing.Size(452, 593);
+            this.ClientSize = new System.Drawing.Size(507, 653);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label8);

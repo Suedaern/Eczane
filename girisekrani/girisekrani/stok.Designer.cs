@@ -72,10 +72,10 @@
             // 
             // textBox5
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox5.Font = new System.Drawing.Font("Corbel Light", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox5.Location = new System.Drawing.Point(629, 35);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(159, 22);
+            this.textBox5.Size = new System.Drawing.Size(159, 23);
             this.textBox5.TabIndex = 18;
             this.textBox5.Text = "Aramak istediğin ilaç";
             // 
@@ -83,7 +83,7 @@
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(794, 27);
+            this.button2.Location = new System.Drawing.Point(800, 30);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(30, 30);
             this.button2.TabIndex = 17;
@@ -92,10 +92,10 @@
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(746, 84);
+            this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button3.Location = new System.Drawing.Point(744, 75);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(78, 48);
+            this.button3.Size = new System.Drawing.Size(86, 44);
             this.button3.TabIndex = 19;
             this.button3.Text = "Stok Ekle ";
             this.button3.UseVisualStyleBackColor = true;

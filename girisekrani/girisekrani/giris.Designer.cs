@@ -75,7 +75,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(204, 231);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(139, 22);
             this.textBox1.TabIndex = 3;
             // 
             // button1
@@ -105,7 +105,7 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.linkLabel1.Location = new System.Drawing.Point(695, 482);
+            this.linkLabel1.Location = new System.Drawing.Point(711, 482);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(77, 22);
             this.linkLabel1.TabIndex = 7;
@@ -149,7 +149,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "giris";
-            this.Text = "giris";
+            this.Text = "Giriş";
             this.ResumeLayout(false);
             this.PerformLayout();
 
