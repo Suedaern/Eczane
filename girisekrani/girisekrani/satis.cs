@@ -26,6 +26,7 @@ namespace girisekrani
 
         private void button2_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Satış Tamamlandı");
             //stoktan alınan adet kadar ilaçları düşecek 
         }
     }
