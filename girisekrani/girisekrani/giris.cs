@@ -16,12 +16,12 @@ namespace girisekrani
         {
             InitializeComponent();
         }
-
+        veritabanı veri = new veritabanı();
+        public static string kullanıcı = "";
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Giriş Başarılı");
-            anasayfa anasayfa = new anasayfa();
-            anasayfa.Show();
+            kullanıcı = kullanıcı_adıtxt.Text;
+            veri.Kullanıcı(kullanıcı_adıtxt, şifretxt, veri.GetBaglanti());
             this.Hide();
         }
 
@@ -39,5 +39,11 @@ namespace girisekrani
             sifre.Show();
             this.Hide();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

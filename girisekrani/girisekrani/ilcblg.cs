@@ -12,6 +12,7 @@ namespace girisekrani
 {
     public partial class ilcblg : Form
     {
+        veritabanı veri = new veritabanı();
         public ilcblg()
         {
             InitializeComponent();
@@ -28,7 +29,7 @@ namespace girisekrani
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Kaydedildi");
+            veri.Yeni_ilac(ürüngrubutxt, üreticiFirmatxt, etkenmaddetxt, ATCkodutxt, reçetetipitxt, miktarıtxt, fiyatıtxt, alınanadettxt);
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)

@@ -17,11 +17,11 @@ namespace girisekrani
             InitializeComponent();
         }
 
+        veritabanı veri = new veritabanı();
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Kayıt Tamamlandı");  //hoşgeldin textbox daki ismi yazsın 
-            anasayfa anasayfa = new anasayfa();
-            anasayfa.Show();
+
+            veri.Yeni_kullanıcı(adtxt, soyadtxt, e_postatxt, kullanıcı_adıtxt, şifretxt);
             this.Hide();
         }
 
