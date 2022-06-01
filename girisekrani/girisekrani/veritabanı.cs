@@ -11,7 +11,7 @@ namespace girisekrani
 {
     internal class veritabanı
     {
-        public SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-HK3OPF6;Initial Catalog=deneme;User ID=sa");
+        public SqlConnection baglanti = new SqlConnection(@"Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\DELL\\Desktop\\eczane.mdf;Integrated Security=True;Connect Timeout=30");
         public SqlCommand komut;
         public SqlDataReader read;
         public anasayfa main = new anasayfa();
