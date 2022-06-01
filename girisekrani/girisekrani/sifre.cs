@@ -51,5 +51,10 @@ namespace girisekrani
             label3.Text = sayi1.ToString() + karakter1 + sayi2.ToString() + karakter2;
 
         }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }
