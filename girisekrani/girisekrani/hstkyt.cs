@@ -29,10 +29,11 @@ namespace girisekrani
             
         }
 
-        
+        veritabanı veri = new veritabanı();
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Kaydedildi");
+            veri.Yeni_hasta(adsoyadtxt, tctxt, teltxt, doğumtarihitxt, sosyalgüvencetxt, cinsiyettxt);
+           
         }
     }
 }

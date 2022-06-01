@@ -36,13 +36,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.adtxt = new System.Windows.Forms.TextBox();
+            this.soyadtxt = new System.Windows.Forms.TextBox();
+            this.e_postatxt = new System.Windows.Forms.TextBox();
+            this.kullanıcı_adıtxt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.şifretxt = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -119,33 +119,33 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // adtxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(204, 190);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(139, 22);
-            this.textBox1.TabIndex = 7;
+            this.adtxt.Location = new System.Drawing.Point(204, 190);
+            this.adtxt.Name = "adtxt";
+            this.adtxt.Size = new System.Drawing.Size(139, 22);
+            this.adtxt.TabIndex = 7;
             // 
-            // textBox2
+            // soyadtxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(204, 230);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(139, 22);
-            this.textBox2.TabIndex = 8;
+            this.soyadtxt.Location = new System.Drawing.Point(204, 230);
+            this.soyadtxt.Name = "soyadtxt";
+            this.soyadtxt.Size = new System.Drawing.Size(139, 22);
+            this.soyadtxt.TabIndex = 8;
             // 
-            // textBox3
+            // e_postatxt
             // 
-            this.textBox3.Location = new System.Drawing.Point(204, 275);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(139, 22);
-            this.textBox3.TabIndex = 9;
+            this.e_postatxt.Location = new System.Drawing.Point(204, 275);
+            this.e_postatxt.Name = "e_postatxt";
+            this.e_postatxt.Size = new System.Drawing.Size(139, 22);
+            this.e_postatxt.TabIndex = 9;
             // 
-            // textBox4
+            // kullanıcı_adıtxt
             // 
-            this.textBox4.Location = new System.Drawing.Point(204, 319);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(139, 22);
-            this.textBox4.TabIndex = 10;
+            this.kullanıcı_adıtxt.Location = new System.Drawing.Point(204, 319);
+            this.kullanıcı_adıtxt.Name = "kullanıcı_adıtxt";
+            this.kullanıcı_adıtxt.Size = new System.Drawing.Size(139, 22);
+            this.kullanıcı_adıtxt.TabIndex = 10;
             // 
             // label7
             // 
@@ -169,13 +169,13 @@
             this.linkLabel1.Text = "tıklayınız";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // maskedTextBox1
+            // şifretxt
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(204, 365);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.PasswordChar = '*';
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 22);
-            this.maskedTextBox1.TabIndex = 14;
+            this.şifretxt.Location = new System.Drawing.Point(204, 365);
+            this.şifretxt.Name = "şifretxt";
+            this.şifretxt.PasswordChar = '*';
+            this.şifretxt.Size = new System.Drawing.Size(100, 22);
+            this.şifretxt.TabIndex = 14;
             // 
             // kayit
             // 
@@ -184,13 +184,13 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(877, 588);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.şifretxt);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.kullanıcı_adıtxt);
+            this.Controls.Add(this.e_postatxt);
+            this.Controls.Add(this.soyadtxt);
+            this.Controls.Add(this.adtxt);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -214,12 +214,12 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox adtxt;
+        private System.Windows.Forms.TextBox soyadtxt;
+        private System.Windows.Forms.TextBox e_postatxt;
+        private System.Windows.Forms.TextBox kullanıcı_adıtxt;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox şifretxt;
     }
 }

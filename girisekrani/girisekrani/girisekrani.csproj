@@ -138,6 +138,7 @@
     <Compile Include="stokekle.Designer.cs">
       <DependentUpon>stokekle.cs</DependentUpon>
     </Compile>
+    <Compile Include="veritabanı.cs" />
     <EmbeddedResource Include="anasayfa.resx">
       <DependentUpon>anasayfa.cs</DependentUpon>
     </EmbeddedResource>

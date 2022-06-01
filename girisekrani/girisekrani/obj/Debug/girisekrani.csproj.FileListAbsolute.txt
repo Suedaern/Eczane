@@ -72,3 +72,5 @@ C:\Users\DELL\Documents\GitHub\Eczane\girisekrani\girisekrani\obj\Debug\girisekr
 C:\Users\DELL\Documents\GitHub\Eczane\girisekrani\girisekrani\obj\Debug\girisekrani.exe
 C:\Users\DELL\Documents\GitHub\Eczane\girisekrani\girisekrani\obj\Debug\girisekrani.pdb
 >>>>>>> 1bc04064f424cdda2bacbc09be9e38cc99ff8fcb
+C:\Users\DELL\Documents\GitHub\Eczane\girisekrani\girisekrani\obj\Debug\girisekrani.satis.resources
+C:\Users\DELL\Documents\GitHub\Eczane\girisekrani\girisekrani\obj\Debug\girisekrani.stokekle.resources

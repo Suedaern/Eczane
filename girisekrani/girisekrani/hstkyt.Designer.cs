@@ -35,13 +35,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.adsoyadtxt = new System.Windows.Forms.TextBox();
+            this.tctxt = new System.Windows.Forms.TextBox();
+            this.sosyalgüvencetxt = new System.Windows.Forms.ComboBox();
+            this.cinsiyettxt = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.teltxt = new System.Windows.Forms.MaskedTextBox();
+            this.doğumtarihitxt = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -106,43 +106,43 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Cinsiyeti :";
             // 
-            // textBox1
+            // adsoyadtxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(167, 131);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 24);
-            this.textBox1.TabIndex = 4;
+            this.adsoyadtxt.Location = new System.Drawing.Point(167, 131);
+            this.adsoyadtxt.Name = "adsoyadtxt";
+            this.adsoyadtxt.Size = new System.Drawing.Size(200, 24);
+            this.adsoyadtxt.TabIndex = 4;
             // 
-            // textBox2
+            // tctxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(167, 177);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 24);
-            this.textBox2.TabIndex = 5;
+            this.tctxt.Location = new System.Drawing.Point(167, 177);
+            this.tctxt.Name = "tctxt";
+            this.tctxt.Size = new System.Drawing.Size(200, 24);
+            this.tctxt.TabIndex = 5;
             // 
-            // comboBox1
+            // sosyalgüvencetxt
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.sosyalgüvencetxt.FormattingEnabled = true;
+            this.sosyalgüvencetxt.Items.AddRange(new object[] {
             "SGK",
             "Emekli Sandığı ",
             "Bağkur"});
-            this.comboBox1.Location = new System.Drawing.Point(167, 312);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 26);
-            this.comboBox1.TabIndex = 8;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
+            this.sosyalgüvencetxt.Location = new System.Drawing.Point(167, 312);
+            this.sosyalgüvencetxt.Name = "sosyalgüvencetxt";
+            this.sosyalgüvencetxt.Size = new System.Drawing.Size(200, 26);
+            this.sosyalgüvencetxt.TabIndex = 8;
+            this.sosyalgüvencetxt.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
-            // comboBox2
+            // cinsiyettxt
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cinsiyettxt.FormattingEnabled = true;
+            this.cinsiyettxt.Items.AddRange(new object[] {
             "Kadın",
             "Erkek"});
-            this.comboBox2.Location = new System.Drawing.Point(167, 359);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(200, 26);
-            this.comboBox2.TabIndex = 9;
+            this.cinsiyettxt.Location = new System.Drawing.Point(167, 359);
+            this.cinsiyettxt.Name = "cinsiyettxt";
+            this.cinsiyettxt.Size = new System.Drawing.Size(200, 26);
+            this.cinsiyettxt.TabIndex = 9;
             // 
             // button2
             // 
@@ -154,22 +154,22 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // maskedTextBox1
+            // teltxt
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(167, 222);
-            this.maskedTextBox1.Mask = "(999) 000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(200, 24);
-            this.maskedTextBox1.TabIndex = 11;
+            this.teltxt.Location = new System.Drawing.Point(167, 222);
+            this.teltxt.Mask = "(999) 000-0000";
+            this.teltxt.Name = "teltxt";
+            this.teltxt.Size = new System.Drawing.Size(200, 24);
+            this.teltxt.TabIndex = 11;
             // 
-            // maskedTextBox2
+            // doğumtarihitxt
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(167, 269);
-            this.maskedTextBox2.Mask = "00/00/0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(200, 24);
-            this.maskedTextBox2.TabIndex = 12;
-            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
+            this.doğumtarihitxt.Location = new System.Drawing.Point(167, 269);
+            this.doğumtarihitxt.Mask = "00/00/0000";
+            this.doğumtarihitxt.Name = "doğumtarihitxt";
+            this.doğumtarihitxt.Size = new System.Drawing.Size(200, 24);
+            this.doğumtarihitxt.TabIndex = 12;
+            this.doğumtarihitxt.ValidatingType = typeof(System.DateTime);
             // 
             // hstkyt
             // 
@@ -177,13 +177,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
             this.ClientSize = new System.Drawing.Size(452, 593);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.doğumtarihitxt);
+            this.Controls.Add(this.teltxt);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cinsiyettxt);
+            this.Controls.Add(this.sosyalgüvencetxt);
+            this.Controls.Add(this.tctxt);
+            this.Controls.Add(this.adsoyadtxt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -209,12 +209,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox adsoyadtxt;
+        private System.Windows.Forms.TextBox tctxt;
+        private System.Windows.Forms.ComboBox sosyalgüvencetxt;
+        private System.Windows.Forms.ComboBox cinsiyettxt;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox teltxt;
+        private System.Windows.Forms.MaskedTextBox doğumtarihitxt;
     }
 }
