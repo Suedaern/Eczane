@@ -31,7 +31,7 @@ namespace girisekrani
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Personel kayıt tamamlandı");
+            MessageBox.Show("Personel kaydedildi");
             ayarlar ayarlar = new ayarlar();   
             ayarlar.Show();
             this.Hide();

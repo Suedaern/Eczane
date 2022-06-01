@@ -119,11 +119,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(333, 250);
+            this.label4.Location = new System.Drawing.Point(328, 247);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 16);
+            this.label4.Size = new System.Drawing.Size(132, 19);
             this.label4.TabIndex = 9;
             this.label4.Text = "Doğrulama Kodu ";
             // 

@@ -38,6 +38,7 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button2 = new System.Windows.Forms.Button();
             this.şifretxt = new System.Windows.Forms.MaskedTextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -133,6 +134,19 @@
             this.şifretxt.Size = new System.Drawing.Size(100, 22);
             this.şifretxt.TabIndex = 9;
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button3.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.button3.Location = new System.Drawing.Point(799, 21);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(42, 32);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "<--";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // giris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -140,6 +154,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(877, 588);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.şifretxt);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.linkLabel1);
@@ -167,5 +182,6 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.MaskedTextBox şifretxt;
+        private System.Windows.Forms.Button button3;
     }
 }
