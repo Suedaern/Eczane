@@ -35,19 +35,20 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.ad_soyadtxt = new System.Windows.Forms.TextBox();
+            this.tc_notxt = new System.Windows.Forms.TextBox();
+            this.e_mailtxt = new System.Windows.Forms.TextBox();
+            this.adresitxt = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.diplomatxt = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.bölümtxt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.işe_giriştxt = new System.Windows.Forms.DateTimePicker();
+            this.doğum_tarihitxt = new System.Windows.Forms.MaskedTextBox();
+            this.tel_notxt = new System.Windows.Forms.MaskedTextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -123,35 +124,35 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "Adresi :";
             // 
-            // textBox1
+            // ad_soyadtxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(177, 84);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 22);
-            this.textBox1.TabIndex = 9;
+            this.ad_soyadtxt.Location = new System.Drawing.Point(177, 84);
+            this.ad_soyadtxt.Name = "ad_soyadtxt";
+            this.ad_soyadtxt.Size = new System.Drawing.Size(121, 22);
+            this.ad_soyadtxt.TabIndex = 9;
             // 
-            // textBox2
+            // tc_notxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(177, 127);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 22);
-            this.textBox2.TabIndex = 10;
+            this.tc_notxt.Location = new System.Drawing.Point(177, 127);
+            this.tc_notxt.Name = "tc_notxt";
+            this.tc_notxt.Size = new System.Drawing.Size(121, 22);
+            this.tc_notxt.TabIndex = 10;
             // 
-            // textBox5
+            // e_mailtxt
             // 
-            this.textBox5.Location = new System.Drawing.Point(177, 245);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(121, 22);
-            this.textBox5.TabIndex = 13;
+            this.e_mailtxt.Location = new System.Drawing.Point(177, 245);
+            this.e_mailtxt.Name = "e_mailtxt";
+            this.e_mailtxt.Size = new System.Drawing.Size(121, 22);
+            this.e_mailtxt.TabIndex = 13;
             // 
-            // textBox6
+            // adresitxt
             // 
-            this.textBox6.Location = new System.Drawing.Point(177, 293);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(121, 22);
-            this.textBox6.TabIndex = 14;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            this.adresitxt.Location = new System.Drawing.Point(177, 293);
+            this.adresitxt.Multiline = true;
+            this.adresitxt.Name = "adresitxt";
+            this.adresitxt.Size = new System.Drawing.Size(121, 22);
+            this.adresitxt.TabIndex = 14;
+            this.adresitxt.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // button2
             // 
@@ -173,16 +174,16 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Diploma :";
             // 
-            // comboBox2
+            // diplomatxt
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.diplomatxt.FormattingEnabled = true;
+            this.diplomatxt.Items.AddRange(new object[] {
             "Lise",
             "Üniversite"});
-            this.comboBox2.Location = new System.Drawing.Point(177, 335);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 18;
+            this.diplomatxt.Location = new System.Drawing.Point(177, 335);
+            this.diplomatxt.Name = "diplomatxt";
+            this.diplomatxt.Size = new System.Drawing.Size(121, 24);
+            this.diplomatxt.TabIndex = 18;
             // 
             // label9
             // 
@@ -194,12 +195,12 @@
             this.label9.TabIndex = 19;
             this.label9.Text = "Bölümü :";
             // 
-            // textBox7
+            // bölümtxt
             // 
-            this.textBox7.Location = new System.Drawing.Point(177, 380);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(121, 22);
-            this.textBox7.TabIndex = 20;
+            this.bölümtxt.Location = new System.Drawing.Point(177, 380);
+            this.bölümtxt.Name = "bölümtxt";
+            this.bölümtxt.Size = new System.Drawing.Size(121, 22);
+            this.bölümtxt.TabIndex = 20;
             // 
             // label7
             // 
@@ -211,29 +212,37 @@
             this.label7.TabIndex = 21;
             this.label7.Text = "İşe Giriş Tarihi :";
             // 
-            // dateTimePicker1
+            // işe_giriştxt
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(177, 417);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 22;
+            this.işe_giriştxt.Location = new System.Drawing.Point(177, 417);
+            this.işe_giriştxt.Name = "işe_giriştxt";
+            this.işe_giriştxt.Size = new System.Drawing.Size(200, 22);
+            this.işe_giriştxt.TabIndex = 22;
             // 
-            // maskedTextBox1
+            // doğum_tarihitxt
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(177, 162);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(121, 22);
-            this.maskedTextBox1.TabIndex = 23;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.doğum_tarihitxt.Location = new System.Drawing.Point(177, 162);
+            this.doğum_tarihitxt.Mask = "00/00/0000";
+            this.doğum_tarihitxt.Name = "doğum_tarihitxt";
+            this.doğum_tarihitxt.Size = new System.Drawing.Size(121, 22);
+            this.doğum_tarihitxt.TabIndex = 23;
+            this.doğum_tarihitxt.ValidatingType = typeof(System.DateTime);
             // 
-            // maskedTextBox2
+            // tel_notxt
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(177, 202);
-            this.maskedTextBox2.Mask = "(999) 000-0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(121, 22);
-            this.maskedTextBox2.TabIndex = 24;
+            this.tel_notxt.Location = new System.Drawing.Point(177, 202);
+            this.tel_notxt.Mask = "(999) 000-0000";
+            this.tel_notxt.Name = "tel_notxt";
+            this.tel_notxt.Size = new System.Drawing.Size(121, 22);
+            this.tel_notxt.TabIndex = 24;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox3.Location = new System.Drawing.Point(177, 25);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(232, 28);
+            this.textBox3.TabIndex = 25;
             // 
             // personel
             // 
@@ -241,19 +250,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(472, 503);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tel_notxt);
+            this.Controls.Add(this.doğum_tarihitxt);
+            this.Controls.Add(this.işe_giriştxt);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.bölümtxt);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.diplomatxt);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.adresitxt);
+            this.Controls.Add(this.e_mailtxt);
+            this.Controls.Add(this.tc_notxt);
+            this.Controls.Add(this.ad_soyadtxt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -263,6 +273,7 @@
             this.Controls.Add(this.button1);
             this.Name = "personel";
             this.Text = "Personel Ekle";
+            this.Load += new System.EventHandler(this.personel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,18 +288,19 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox ad_soyadtxt;
+        public System.Windows.Forms.TextBox tc_notxt;
+        public System.Windows.Forms.TextBox e_mailtxt;
+        public System.Windows.Forms.TextBox adresitxt;
+        public System.Windows.Forms.ComboBox diplomatxt;
+        public System.Windows.Forms.TextBox bölümtxt;
+        public System.Windows.Forms.DateTimePicker işe_giriştxt;
+        public System.Windows.Forms.MaskedTextBox doğum_tarihitxt;
+        public System.Windows.Forms.MaskedTextBox tel_notxt;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace girisekrani
 {
@@ -16,13 +17,17 @@ namespace girisekrani
         {
             InitializeComponent();
         }
+        OleDbConnection baglanti = new OleDbConnection("Provider = Microsoft.ACE.OLEDB.12.0; Data Source = C:\\Users\\DELL\\Desktop\\eczane.accdb");
+        
+        
 
-        veritabanı veri = new veritabanı();
         private void button1_Click(object sender, EventArgs e)
         {
-
-            veri.Yeni_kullanıcı(adtxt, soyadtxt, e_postatxt, kullanıcı_adıtxt, şifretxt);
-            this.Hide();
+            baglanti.Open();
+            OleDbCommand komut = new OleDbCommand("Insert into kullanıcı_kayıt (Ad,Soyad,E_posta,Kullanıcı_adı,Şifre) values('" + adtxt.Text.ToString() + "', '" + soyadtxt.Text.ToString() + "', '" + e_postatxt.Text.ToString() + "', '" + kullanıcı_adıtxt.Text.ToString() + "', '" + şifretxt.Text.ToString() + "')", baglanti);
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -38,6 +43,16 @@ namespace girisekrani
             Form1 form = new Form1();
             form.Show();
             this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kayit_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

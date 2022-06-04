@@ -117,11 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIgAAACICAIAAACz2DQFAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAABc9JREFUeF7tnMFx4zAMRbeKnLaRnFJFCkkjLiSFuBEXkv0Tgh4ZpGSbBMFPL95p
+        vAAADrwBlbxySQAABc9JREFUeF7tnMFx4zAMRbeKnLaRnFJFCkkjLiSFuBEXkv0Tgh4ZpGSbBMFPL95p
         I8oSxCcAtOTZPz8BJSGGlBBDSoghJcSQEmJICTGkhBhSQgwpIYaUEENKiCElxJASYkgJMaSEGFJCDCkh
         hpRXFnM+n0+n09fX1/v7+99f/mzAn5+/fP8in6Hh1cRcLhfIgAmZ/mdIkuRAs3kdMZhTlRPNMBh6BTEo
         VlZKFDiynMOdtcUYZskBqI1yPkdWFYPGflcJdkCzwbRiZ/QeIB/+BX/CK0ZRuOQD++BQzsVtSTHHU4lJ

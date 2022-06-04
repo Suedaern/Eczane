@@ -46,6 +46,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.alınanadettxt = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -369,12 +370,21 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox1.Location = new System.Drawing.Point(217, 25);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(206, 28);
+            this.textBox1.TabIndex = 20;
+            // 
             // ilcblg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(507, 653);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.alınanadettxt);
             this.Controls.Add(this.label8);
@@ -395,6 +405,7 @@
             this.Controls.Add(this.button1);
             this.Name = "ilcblg";
             this.Text = "İlaç Bilgi";
+            this.Load += new System.EventHandler(this.ilcblg_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -410,15 +421,16 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox ürüngrubutxt;
-        private System.Windows.Forms.ComboBox ATCkodutxt;
-        private System.Windows.Forms.TextBox etkenmaddetxt;
-        private System.Windows.Forms.TextBox üreticiFirmatxt;
-        private System.Windows.Forms.ComboBox reçetetipitxt;
-        private System.Windows.Forms.TextBox miktarıtxt;
-        private System.Windows.Forms.TextBox fiyatıtxt;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox alınanadettxt;
         private System.Windows.Forms.Button button3;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.ComboBox ürüngrubutxt;
+        public System.Windows.Forms.ComboBox ATCkodutxt;
+        public System.Windows.Forms.TextBox etkenmaddetxt;
+        public System.Windows.Forms.TextBox üreticiFirmatxt;
+        public System.Windows.Forms.ComboBox reçetetipitxt;
+        public System.Windows.Forms.TextBox miktarıtxt;
+        public System.Windows.Forms.TextBox fiyatıtxt;
+        public System.Windows.Forms.TextBox alınanadettxt;
     }
 }

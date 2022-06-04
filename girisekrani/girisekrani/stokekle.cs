@@ -28,5 +28,10 @@ namespace girisekrani
         {
             MessageBox.Show("Ekleme tamamlandı");
         }
+
+        private void stokekle_Load(object sender, EventArgs e)
+        {
+            textBox1.Text = giris.kullanıcı.ToString();
+        }
     }
 }

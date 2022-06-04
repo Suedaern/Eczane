@@ -69,5 +69,10 @@ namespace girisekrani
             label4.Text = sayi1.ToString() + karakter1 + sayi2.ToString() + karakter2;
 
         }
+
+        private void sifredgstr_Load(object sender, EventArgs e)
+        {
+            textBox1.Text = giris.kullanıcı.ToString();
+        }
     }
 }

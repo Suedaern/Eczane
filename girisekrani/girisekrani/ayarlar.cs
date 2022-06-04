@@ -49,6 +49,11 @@ namespace girisekrani
 
         private void ayarlar_Load(object sender, EventArgs e)
         {
+            textBox1.Text = giris.kullanıcı.ToString();
+        }
+
+        private void button4_Enter(object sender, EventArgs e)
+        {
 
         }
     }

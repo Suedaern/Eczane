@@ -67,5 +67,11 @@ namespace girisekrani
             satis.Show();
             this.Hide();
         }
+
+        private void anasayfa_Load(object sender, EventArgs e)
+        {
+            textBox1.Text = giris.kullanıcı.ToString();
+
+        }
     }
 }

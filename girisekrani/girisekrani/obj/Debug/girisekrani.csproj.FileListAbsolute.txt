@@ -74,3 +74,6 @@ C:\Users\DELL\Documents\GitHub\Eczane\girisekrani\girisekrani\obj\Debug\girisekr
 >>>>>>> 1bc04064f424cdda2bacbc09be9e38cc99ff8fcb
 C:\Users\DELL\Documents\GitHub\Eczane\girisekrani\girisekrani\obj\Debug\girisekrani.satis.resources
 C:\Users\DELL\Documents\GitHub\Eczane\girisekrani\girisekrani\obj\Debug\girisekrani.stokekle.resources
+C:\Users\DELL\Documents\GitHub\Eczane\girisekrani\girisekrani\bin\Debug\System.Data.OleDb.dll
+C:\Users\DELL\Documents\GitHub\Eczane\girisekrani\girisekrani\bin\Debug\System.Data.OleDb.xml
+C:\Users\DELL\Documents\GitHub\Eczane\girisekrani\girisekrani\obj\Debug\girisekrani.csproj.CopyComplete

@@ -56,6 +56,7 @@
             this.label1.Size = new System.Drawing.Size(321, 80);
             this.label1.TabIndex = 0;
             this.label1.Text = "ECZANEM";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -215,6 +216,7 @@
             this.Controls.Add(this.label1);
             this.Name = "kayit";
             this.Text = "Kayıt";
+            this.Load += new System.EventHandler(this.kayit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,13 +231,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox adtxt;
-        private System.Windows.Forms.TextBox soyadtxt;
-        private System.Windows.Forms.TextBox e_postatxt;
-        private System.Windows.Forms.TextBox kullanıcı_adıtxt;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.MaskedTextBox şifretxt;
         private System.Windows.Forms.Button button2;
+        public System.Windows.Forms.TextBox adtxt;
+        public System.Windows.Forms.TextBox soyadtxt;
+        public System.Windows.Forms.TextBox e_postatxt;
+        public System.Windows.Forms.TextBox kullanıcı_adıtxt;
+        public System.Windows.Forms.MaskedTextBox şifretxt;
     }
 }

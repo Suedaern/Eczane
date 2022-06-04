@@ -75,10 +75,12 @@
             // 
             // kullanıcı_adıtxt
             // 
+            this.kullanıcı_adıtxt.AllowDrop = true;
             this.kullanıcı_adıtxt.Location = new System.Drawing.Point(204, 231);
             this.kullanıcı_adıtxt.Name = "kullanıcı_adıtxt";
             this.kullanıcı_adıtxt.Size = new System.Drawing.Size(139, 22);
             this.kullanıcı_adıtxt.TabIndex = 3;
+            this.kullanıcı_adıtxt.TextChanged += new System.EventHandler(this.kullanıcı_adıtxt_TextChanged);
             // 
             // button1
             // 
@@ -146,6 +148,7 @@
             this.button3.Text = "<--";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Enter += new System.EventHandler(this.button3_Click);
             // 
             // giris
             // 
@@ -166,6 +169,7 @@
             this.Controls.Add(this.label1);
             this.Name = "giris";
             this.Text = "Giriş";
+            this.Load += new System.EventHandler(this.giris_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,12 +180,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox kullanıcı_adıtxt;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.MaskedTextBox şifretxt;
         private System.Windows.Forms.Button button3;
+        public System.Windows.Forms.TextBox kullanıcı_adıtxt;
+        public System.Windows.Forms.MaskedTextBox şifretxt;
     }
 }

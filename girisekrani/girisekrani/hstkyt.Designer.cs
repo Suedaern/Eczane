@@ -42,6 +42,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.teltxt = new System.Windows.Forms.MaskedTextBox();
             this.doğumtarihitxt = new System.Windows.Forms.MaskedTextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -171,12 +172,21 @@
             this.doğumtarihitxt.TabIndex = 12;
             this.doğumtarihitxt.ValidatingType = typeof(System.DateTime);
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox1.Location = new System.Drawing.Point(126, 29);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(231, 28);
+            this.textBox1.TabIndex = 17;
+            // 
             // hstkyt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Ivory;
             this.ClientSize = new System.Drawing.Size(452, 593);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.doğumtarihitxt);
             this.Controls.Add(this.teltxt);
             this.Controls.Add(this.button2);
@@ -195,6 +205,7 @@
             this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.Name = "hstkyt";
             this.Text = "Hasta Kayıt";
+            this.Load += new System.EventHandler(this.hstkyt_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,12 +220,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox adsoyadtxt;
-        private System.Windows.Forms.TextBox tctxt;
-        private System.Windows.Forms.ComboBox sosyalgüvencetxt;
-        private System.Windows.Forms.ComboBox cinsiyettxt;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.MaskedTextBox teltxt;
-        private System.Windows.Forms.MaskedTextBox doğumtarihitxt;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox adsoyadtxt;
+        public System.Windows.Forms.TextBox tctxt;
+        public System.Windows.Forms.ComboBox sosyalgüvencetxt;
+        public System.Windows.Forms.ComboBox cinsiyettxt;
+        public System.Windows.Forms.MaskedTextBox teltxt;
+        public System.Windows.Forms.MaskedTextBox doğumtarihitxt;
     }
 }

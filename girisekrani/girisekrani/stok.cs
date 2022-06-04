@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace girisekrani
 {
@@ -17,6 +18,10 @@ namespace girisekrani
             InitializeComponent();
         }
 
+        OleDbConnection baglanti = new OleDbConnection("Provider = Microsoft.ACE.OLEDB.12.0; Data Source = C:\\Users\\DELL\\Desktop\\eczane.accdb");
+        DataSet ds = new DataSet();
+        DataTable tablo = new DataTable();
+        OleDbCommand komut = new OleDbCommand();
         private void button1_Click(object sender, EventArgs e)
         {
             anasayfa anasayfa = new anasayfa();
@@ -34,6 +39,17 @@ namespace girisekrani
             stokekle stokekle = new stokekle();
             stokekle.Show();
             this.Hide();
+        }
+
+        private void stok_Load(object sender, EventArgs e)
+        {
+            textBox1.Text = giris.kullanıcı.ToString();
+            baglanti.Open();
+            komut.Connection = baglanti;
+            OleDbDataAdapter da = new OleDbDataAdapter("Select Ürün_grubu,Üretici_firma,Etken_madde,ATC_kodu,Reçete_tipi,Miktarı,Fiyatı,Alınan_adet from ilaç_kayıt where kullanıcı_adı='" + textBox1.Text + "'", baglanti);
+            da.Fill(ds, "ilaç_kayıt");
+            dataGridView1.DataSource = ds.Tables["ilaç_kayıt"];
+            baglanti.Close();
         }
     }
 }

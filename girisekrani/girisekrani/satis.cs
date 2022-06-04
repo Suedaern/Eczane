@@ -29,5 +29,10 @@ namespace girisekrani
             MessageBox.Show("Satış Tamamlandı");
             //stoktan alınan adet kadar ilaçları düşecek 
         }
+
+        private void satis_Load(object sender, EventArgs e)
+        {
+            textBox3.Text = giris.kullanıcı.ToString();
+        }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace girisekrani
 {
@@ -16,12 +17,20 @@ namespace girisekrani
         {
             InitializeComponent();
         }
-
+        OleDbConnection baglanti = new OleDbConnection("Provider = Microsoft.ACE.OLEDB.12.0; Data Source = C:\\Users\\DELL\\Desktop\\eczane.accdb");
+        OleDbCommand komut = new OleDbCommand();
         private void button1_Click(object sender, EventArgs e)
         {
+            baglanti.Open();
+            komut.Connection=baglanti; 
+
             if (label3.Text == textBox3.Text)
             {
+                komut.CommandText = "Update kullanıcı_kayıt set Şifre='" + maskedTextBox2.Text + "' where Kullanıcı_adı ='" + maskedTextBox1.Text + "'";
+                komut.ExecuteNonQuery();
+                baglanti.Close();
                 MessageBox.Show("Şifre Güncellendi");
+               
                 anasayfa anasayfa = new anasayfa();
                 anasayfa.Show();
                 this.Hide();
