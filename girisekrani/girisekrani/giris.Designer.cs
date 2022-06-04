@@ -59,9 +59,9 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(48, 227);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 25);
+            this.label2.Size = new System.Drawing.Size(118, 25);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Kullanıcı Adı:";
+            this.label2.Text = "Eczane Adı:";
             // 
             // label3
             // 

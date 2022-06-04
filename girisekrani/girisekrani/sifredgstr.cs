@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace girisekrani
 {
@@ -17,6 +18,9 @@ namespace girisekrani
             InitializeComponent();
         }
 
+        OleDbConnection baglanti = new OleDbConnection("Provider = Microsoft.ACE.OLEDB.12.0; Data Source = C:\\Users\\DELL\\Desktop\\eczane.accdb");
+        OleDbCommand komut = new OleDbCommand();
+        OleDbDataReader read;
         private void button1_Click(object sender, EventArgs e)
         {
             ayarlar ayarlar = new ayarlar();
@@ -27,11 +31,32 @@ namespace girisekrani
         private void button2_Click(object sender, EventArgs e)
         {
           if(label4.Text == textBox1.Text)
-            {
-                MessageBox.Show("Şifre güncellendi");
-                ayarlar ayarlar = new ayarlar();
-                ayarlar.Show();
-                this.Hide();
+          {
+                baglanti.Open();
+                komut.Connection = baglanti;
+                komut.CommandText = "SELECT * FROM kullanıcı_kayıt where kullanıcı_adı='" + textBox2.Text + "' AND şifre='" + maskedTextBox1.Text + "'";
+                read = komut.ExecuteReader();
+              
+                if (read.Read())
+                {
+                    if(maskedTextBox2.Text==maskedTextBox3.Text)
+                    {
+                      
+                        komut.CommandText = "update kullanıcı_kayıt set Şifre='" + maskedTextBox2.Text + "' where  Kullanıcı_adı='" + textBox2.Text + "'";
+                        komut.ExecuteNonQuery();
+                      
+                        MessageBox.Show("Şifre güncellendi");
+                    }
+                    else
+                    {
+                        MessageBox.Show("yeni şifre, yeni şifre tekrara eşit değil.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Girilen eski şifre yanlış");
+                }
+                baglanti.Close();
             }
 
             else
@@ -72,7 +97,7 @@ namespace girisekrani
 
         private void sifredgstr_Load(object sender, EventArgs e)
         {
-            textBox1.Text = giris.kullanıcı.ToString();
+            textBox2.Text = giris.kullanıcı.ToString();
         }
     }
 }

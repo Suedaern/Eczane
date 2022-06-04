@@ -38,6 +38,12 @@ namespace girisekrani
             try
             {
                 komut.ExecuteNonQuery();
+                adsoyadtxt.Clear();
+                tctxt.Clear();
+                teltxt.Clear();
+                doğumtarihitxt.Clear();
+                MessageBox.Show("Hasta kaydedildi");
+
             }
             catch (OleDbException ex)
             {

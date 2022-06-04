@@ -94,9 +94,9 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.Location = new System.Drawing.Point(35, 321);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 20);
+            this.label5.Size = new System.Drawing.Size(99, 20);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Kullanıcı Adı:";
+            this.label5.Text = "Eczane Adı:";
             // 
             // label6
             // 

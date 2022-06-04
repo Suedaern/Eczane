@@ -31,7 +31,15 @@ namespace girisekrani
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //veritabanından girilen ilacı bulu ekranda gösterecek
+            dataGridView1.Columns.Clear();
+            ds.Tables.Clear();
+            dataGridView1.Refresh();
+            baglanti.Open();
+            komut.Connection = baglanti;
+            OleDbDataAdapter da = new OleDbDataAdapter("Select İlaç_adı,Ürün_grubu,Üretici_firma,Etken_madde,ATC_kodu,Reçete_tipi,Miktarı,Fiyatı,Alınan_adet from ilaç_kayıt where kullanıcı_adı='" + textBox1.Text + "' AND İlaç_adı='" + textBox5.Text + "'", baglanti);
+            da.Fill(ds, "ilaç_kayıt");
+            dataGridView1.DataSource = ds.Tables["ilaç_kayıt"];
+            baglanti.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -46,6 +54,35 @@ namespace girisekrani
             textBox1.Text = giris.kullanıcı.ToString();
             baglanti.Open();
             komut.Connection = baglanti;
+            OleDbDataAdapter da = new OleDbDataAdapter("Select İlaç_adı,Ürün_grubu,Üretici_firma,Etken_madde,ATC_kodu,Reçete_tipi,Miktarı,Fiyatı,Alınan_adet from ilaç_kayıt where kullanıcı_adı='" + textBox1.Text + "'", baglanti);
+            da.Fill(ds, "ilaç_kayıt");
+            dataGridView1.DataSource = ds.Tables["ilaç_kayıt"];
+            baglanti.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Columns.Clear();
+            ds.Tables.Clear();
+            dataGridView1.Refresh();
+            baglanti.Open();
+            komut.Connection = baglanti;
+            OleDbDataAdapter da = new OleDbDataAdapter("Select İlaç_adı,Ürün_grubu,Üretici_firma,Etken_madde,ATC_kodu,Reçete_tipi,Miktarı,Fiyatı,Alınan_adet from ilaç_kayıt where kullanıcı_adı='" + textBox1.Text + "'", baglanti);
+            da.Fill(ds, "ilaç_kayıt");
+            dataGridView1.DataSource = ds.Tables["ilaç_kayıt"];
+            baglanti.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            dataGridView1.Columns.Clear();
+            ds.Tables.Clear();
+            dataGridView1.Refresh();
+            baglanti.Open();
+            komut.Connection = baglanti;
+            komut.CommandText = "delete from ilaç_kayıt where  İlaç_adı='" + textBox2.Text + "'";
+            komut.ExecuteNonQuery();
             OleDbDataAdapter da = new OleDbDataAdapter("Select İlaç_adı,Ürün_grubu,Üretici_firma,Etken_madde,ATC_kodu,Reçete_tipi,Miktarı,Fiyatı,Alınan_adet from ilaç_kayıt where kullanıcı_adı='" + textBox1.Text + "'", baglanti);
             da.Fill(ds, "ilaç_kayıt");
             dataGridView1.DataSource = ds.Tables["ilaç_kayıt"];
