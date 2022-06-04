@@ -31,14 +31,22 @@ namespace girisekrani
         private void button3_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            OleDbCommand komut = new OleDbCommand("Insert into ilaç_kayıt (Kullanıcı_adı,Ürün_grubu,Üretici_firma,Etken_madde,ATC_kodu,Reçete_tipi,Miktarı,Fiyatı,Alınan_adet) values('" + textBox1.Text.ToString() + "', '" + ürüngrubutxt.Text.ToString() + "', '" + üreticiFirmatxt.Text.ToString() + "', '" + etkenmaddetxt.Text.ToString() + "', '" + ATCkodutxt.Text.ToString() + "', '" + reçetetipitxt.Text.ToString() + "', '" + miktarıtxt.Text.ToString() + "', '" +fiyatıtxt.Text.ToString() + "', '" + alınanadettxt.Text.ToString() + "')", baglanti);
-            komut.ExecuteNonQuery();
+            OleDbCommand komut = new OleDbCommand("Insert into ilaç_kayıt (İlaç_adı,Ürün_grubu,Üretici_firma,Etken_madde,ATC_kodu,Reçete_tipi,Miktarı,Fiyatı,Alınan_adet,Kullanıcı_adı) values('" + ilaç_adı.Text.ToString() + "', '" + ürüngrubutxt.Text.ToString() + "', '" + üreticiFirmatxt.Text.ToString() + "', '" + etkenmaddetxt.Text.ToString() + "', '" + ATCkodutxt.Text.ToString() + "', '" + reçetetipitxt.Text.ToString() + "', '" + miktarıtxt.Text.ToString() + "', '" +fiyatıtxt.Text.ToString() + "', '" + alınanadettxt.Text.ToString() + "', '" + textBox1.Text.ToString() + "')", baglanti);
+            try
+            {
+                komut.ExecuteNonQuery();
+            }
+            catch (OleDbException ex)
+            {
+                if (ex.ErrorCode == -2147467259)
+                {
+                    MessageBox.Show("Girmiş olduğunuz ilaç daha önce kaydedilmiş stok ekle sayfasından güncelleme yapabilirsiniz.");
+                }
+            }
             baglanti.Close();
-            ürüngrubutxt.Items.Clear();
+            ilaç_adı.Clear();
             üreticiFirmatxt.Clear();
             etkenmaddetxt.Clear();
-            ATCkodutxt.Items.Clear();
-            reçetetipitxt.Items.Clear();
             miktarıtxt.Clear();
             fiyatıtxt.Clear();
             alınanadettxt.Clear();
@@ -52,6 +60,11 @@ namespace girisekrani
         private void ilcblg_Load(object sender, EventArgs e)
         {
             textBox1.Text = giris.kullanıcı.ToString();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

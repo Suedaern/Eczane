@@ -47,6 +47,8 @@
             this.alınanadettxt = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.ilaç_adı = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -378,12 +380,32 @@
             this.textBox1.Size = new System.Drawing.Size(206, 28);
             this.textBox1.TabIndex = 20;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(84, 91);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(70, 20);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "İlaç Adı :";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // ilaç_adı
+            // 
+            this.ilaç_adı.Location = new System.Drawing.Point(217, 89);
+            this.ilaç_adı.Name = "ilaç_adı";
+            this.ilaç_adı.Size = new System.Drawing.Size(194, 22);
+            this.ilaç_adı.TabIndex = 22;
+            // 
             // ilcblg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(507, 653);
+            this.Controls.Add(this.ilaç_adı);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.alınanadettxt);
@@ -432,5 +454,7 @@
         public System.Windows.Forms.TextBox miktarıtxt;
         public System.Windows.Forms.TextBox fiyatıtxt;
         public System.Windows.Forms.TextBox alınanadettxt;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox ilaç_adı;
     }
 }

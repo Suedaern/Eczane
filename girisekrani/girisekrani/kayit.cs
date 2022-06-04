@@ -25,7 +25,18 @@ namespace girisekrani
         {
             baglanti.Open();
             OleDbCommand komut = new OleDbCommand("Insert into kullanıcı_kayıt (Ad,Soyad,E_posta,Kullanıcı_adı,Şifre) values('" + adtxt.Text.ToString() + "', '" + soyadtxt.Text.ToString() + "', '" + e_postatxt.Text.ToString() + "', '" + kullanıcı_adıtxt.Text.ToString() + "', '" + şifretxt.Text.ToString() + "')", baglanti);
-            komut.ExecuteNonQuery();
+            try
+            {
+                komut.ExecuteNonQuery();
+            }
+            catch (OleDbException ex)
+            {
+                if (ex.ErrorCode == -2147467259)
+                {
+                    MessageBox.Show("Girmiş olduğunuz kullanıcı adı kullanılmakta.");
+                }
+            }
+
             baglanti.Close();
             
         }

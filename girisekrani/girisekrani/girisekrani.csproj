@@ -81,7 +81,6 @@
     <Compile Include="ayarlar.Designer.cs">
       <DependentUpon>ayarlar.cs</DependentUpon>
     </Compile>
-    <Compile Include="database.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

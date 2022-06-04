@@ -35,7 +35,17 @@ namespace girisekrani
         {
             baglanti.Open();
             OleDbCommand komut = new OleDbCommand("Insert into personel_kayıt (Kullanıcı_adı,Ad_soyad,Tc_no,Doğum_tarihi,Tel_no,E_mail,Adresi,Diploma,Bölümü,İşe_giriş_tarihi) values('" + textBox3.Text.ToString() + "', '" + ad_soyadtxt.Text.ToString() + "', '" + tc_notxt.Text.ToString() + "', '" + doğum_tarihitxt.Text.ToString() + "', '" + tel_notxt.Text.ToString() + "', '" + e_mailtxt.Text.ToString() + "', '" + adresitxt.Text.ToString() + "', '" + diplomatxt.Text.ToString() + "', '" + bölümtxt.Text.ToString() + "', '" + işe_giriştxt.Text.ToString() + "')", baglanti);
-            komut.ExecuteNonQuery();
+            try
+            {
+                komut.ExecuteNonQuery();
+            }
+            catch (OleDbException ex)
+            {
+                if (ex.ErrorCode == -2147467259)
+                {
+                    MessageBox.Show("Girmiş olduğunuz personel zaten kaydedilmiş.");
+                }
+            }
             baglanti.Close();
             MessageBox.Show("Personel kaydedildi");
            

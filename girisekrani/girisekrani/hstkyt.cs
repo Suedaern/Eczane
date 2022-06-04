@@ -35,7 +35,17 @@ namespace girisekrani
         {
             baglanti.Open();
             OleDbCommand komut = new OleDbCommand("Insert into hasta_kayıt (Kullanıcı_adı,Ad_soyad,Tc_no,Tel_no,Doğum_tarihi,Sosyal_güvencesi,Cinsiyet) values('" + textBox1.Text.ToString() + "', '" + adsoyadtxt.Text.ToString() + "', '" + tctxt.Text.ToString() + "', '" + teltxt.Text.ToString() + "', '" + doğumtarihitxt.Text.ToString() + "', '" + sosyalgüvencetxt.Text.ToString() +"', '" + cinsiyettxt.Text.ToString() + "')", baglanti);
-            komut.ExecuteNonQuery();
+            try
+            {
+                komut.ExecuteNonQuery();
+            }
+            catch (OleDbException ex)
+            {
+                if (ex.ErrorCode == -2147467259)
+                {
+                    MessageBox.Show("Girmiş olduğunuz hasta zaten kayıtlı.");
+                }
+            }
             baglanti.Close();
         }
 
