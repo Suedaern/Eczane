@@ -63,10 +63,6 @@ namespace girisekrani
         private void button1_Click(object sender, EventArgs e)
         {
             kullanıcı = kullanıcı_adıtxt.Text;
-            string ad = kullanıcı_adıtxt.Text;
-            string sifre = şifretxt.Text;
-
-
             baglanti.Open();
             komut.Connection = baglanti;
             komut.CommandText = "SELECT * FROM kullanıcı_kayıt where kullanıcı_adı='" + kullanıcı_adıtxt.Text + "' AND şifre='" + şifretxt.Text + "'";
@@ -76,7 +72,7 @@ namespace girisekrani
                 kullanıcı_adıtxt.Clear();
                 şifretxt.Clear();
                 anasayfa anasayfa = new anasayfa();
-                anasayfa.ShowDialog();
+                anasayfa.Show();
                 this.Hide();
 
             }

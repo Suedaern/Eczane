@@ -30,10 +30,6 @@ namespace girisekrani
                 komut.ExecuteNonQuery();
                 baglanti.Close();
                 MessageBox.Show("Şifre Güncellendi");
-               
-                anasayfa anasayfa = new anasayfa();
-                anasayfa.Show();
-                this.Hide();
             }
             else
             {

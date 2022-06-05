@@ -31,16 +31,19 @@ namespace girisekrani
         {
             baglanti.Open();
             komut.Connection = baglanti;
-            int sayı2 = Convert.ToInt16(textBox2.Text);
-            OleDbCommand com = new OleDbCommand("SELECT Alınan_adet,Alınan_adet+sayı2 AS * from ilaç_kayıt where İlaç_adı='" + comboBox1.Text + "' AND Kullanıcı_adı='" + textBox3.Text + "' ");
+            OleDbCommand com = new OleDbCommand("SELECT * from ilaç_kayıt where İlaç_adı='" + comboBox1.Text + "' AND Kullanıcı_adı='" + textBox3.Text + "'", baglanti);
             com.Connection=baglanti;
             OleDbDataReader read = com.ExecuteReader();
-            string adet = read.ToString();
-            //int sayı1 = Convert.ToInt32(adet);
-            //int sayı2 = Convert.ToInt16(textBox2.Text);
-            //int sonuç = sayı1 + sayı2;
-            //string sonuc = sonuç.ToString();
-            komut.CommandText = "update ilaç_kayıt set Fiyatı='" + textBox1.Text + "', Alınan_adet='" + adet + "' where İlaç_adı ='" + comboBox1.Text + "'";
+            while (read.Read())
+            {
+                textBox4.Text = read[8].ToString();
+            }
+
+            int sayi2 = Convert.ToInt16(textBox2.Text);
+            int sayi1 = Convert.ToInt16(textBox4.Text);
+            int sonuç = sayi1 + sayi2;
+            string sonuc = sonuç.ToString();
+            komut.CommandText = "UPDATE ilaç_kayıt set Fiyatı='" + textBox1.Text + "', Alınan_adet='" + sonuc + "' where İlaç_adı ='" + comboBox1.Text + "' AND Kullanıcı_adı='" + textBox3 +"'";
             komut.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Ekleme tamamlandı");
@@ -52,9 +55,23 @@ namespace girisekrani
             DataTable dt = new DataTable();
             OleDbDataAdapter da = new OleDbDataAdapter("select * from ilaç_kayıt where kullanıcı_adı='" + textBox3.Text + "' ORDER BY İlaç_adı ASC ", baglanti);
             da.Fill(dt);
-            comboBox1.ValueMember = "kullanıcı_adı";
+            comboBox1.ValueMember = "Kullanıcı_adı";
             comboBox1.DisplayMember = "İlaç_adı";
             comboBox1.DataSource = dt;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            baglanti.Open();
+            OleDbCommand com = new OleDbCommand("SELECT * from ilaç_kayıt where İlaç_adı='" + comboBox1.Text + "' AND Kullanıcı_adı='" + textBox3.Text + "'", baglanti);
+            com.Connection = baglanti;
+            OleDbDataReader read = com.ExecuteReader();
+            while(read.Read())
+            {
+                textBox4.Text = read[8].ToString();
+            }
+            
+            baglanti.Close();
         }
     }
 }
