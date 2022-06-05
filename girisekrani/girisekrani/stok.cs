@@ -54,7 +54,7 @@ namespace girisekrani
             textBox1.Text = giris.kullanıcı.ToString();
             baglanti.Open();
             komut.Connection = baglanti;
-            OleDbDataAdapter da = new OleDbDataAdapter("Select İlaç_adı,Ürün_grubu,Üretici_firma,Etken_madde,ATC_kodu,Reçete_tipi,Miktarı,Fiyatı,Alınan_adet from ilaç_kayıt where kullanıcı_adı='" + textBox1.Text + "'", baglanti);
+            OleDbDataAdapter da = new OleDbDataAdapter("Select İlaç_adı,Ürün_grubu,Üretici_firma,Etken_madde,ATC_kodu,Reçete_tipi,Miktarı,Fiyatı,Alınan_adet from ilaç_kayıt where kullanıcı_adı='" + textBox1.Text + "' ORDER BY İlaç_adı ASC ", baglanti);
             da.Fill(ds, "ilaç_kayıt");
             dataGridView1.DataSource = ds.Tables["ilaç_kayıt"];
             baglanti.Close();
@@ -67,7 +67,7 @@ namespace girisekrani
             dataGridView1.Refresh();
             baglanti.Open();
             komut.Connection = baglanti;
-            OleDbDataAdapter da = new OleDbDataAdapter("Select İlaç_adı,Ürün_grubu,Üretici_firma,Etken_madde,ATC_kodu,Reçete_tipi,Miktarı,Fiyatı,Alınan_adet from ilaç_kayıt where kullanıcı_adı='" + textBox1.Text + "'", baglanti);
+            OleDbDataAdapter da = new OleDbDataAdapter("Select İlaç_adı,Ürün_grubu,Üretici_firma,Etken_madde,ATC_kodu,Reçete_tipi,Miktarı,Fiyatı,Alınan_adet from ilaç_kayıt where kullanıcı_adı='" + textBox1.Text + "' ORDER BY İlaç_adı ASC ", baglanti);
             da.Fill(ds, "ilaç_kayıt");
             dataGridView1.DataSource = ds.Tables["ilaç_kayıt"];
             baglanti.Close();

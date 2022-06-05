@@ -161,6 +161,7 @@
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "anasayfa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Anasayfa";
             this.Load += new System.EventHandler(this.anasayfa_Load);
             this.ResumeLayout(false);

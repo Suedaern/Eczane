@@ -272,6 +272,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "personel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Personel Ekle";
             this.Load += new System.EventHandler(this.personel_Load);
             this.ResumeLayout(false);

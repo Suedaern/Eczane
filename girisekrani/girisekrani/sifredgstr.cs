@@ -39,7 +39,8 @@ namespace girisekrani
               
                 if (read.Read())
                 {
-                    if(maskedTextBox2.Text==maskedTextBox3.Text)
+                    read.Close();
+                    if (maskedTextBox2.Text==maskedTextBox3.Text)
                     {
                       
                         komut.CommandText = "update kullanıcı_kayıt set Şifre='" + maskedTextBox2.Text + "' where  Kullanıcı_adı='" + textBox2.Text + "'";
@@ -56,6 +57,7 @@ namespace girisekrani
                 {
                     MessageBox.Show("Girilen eski şifre yanlış");
                 }
+                
                 baglanti.Close();
             }
 

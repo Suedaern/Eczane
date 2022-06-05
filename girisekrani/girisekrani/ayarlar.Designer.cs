@@ -115,6 +115,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "ayarlar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ayarlar";
             this.Load += new System.EventHandler(this.ayarlar_Load);
             this.ResumeLayout(false);

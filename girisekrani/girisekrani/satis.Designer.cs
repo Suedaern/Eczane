@@ -241,6 +241,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "satis";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Satış Yap";
             this.Load += new System.EventHandler(this.satis_Load);
             this.ResumeLayout(false);

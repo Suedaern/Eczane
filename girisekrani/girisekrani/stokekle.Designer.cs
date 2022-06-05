@@ -158,6 +158,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "stokekle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Stok Ekle";
             this.Load += new System.EventHandler(this.stokekle_Load);
             this.ResumeLayout(false);

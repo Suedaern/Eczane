@@ -60,7 +60,7 @@ namespace girisekrani
             textBox1.Text = giris.kullanıcı.ToString();
             baglanti.Open();
             komut.Connection = baglanti;
-            OleDbDataAdapter da = new OleDbDataAdapter("Select Ad_soyad,Tc_no,Tel_no,Doğum_tarihi,Sosyal_güvencesi,Cinsiyet from hasta_kayıt where kullanıcı_adı='" + textBox1.Text + "'", baglanti);
+            OleDbDataAdapter da = new OleDbDataAdapter("Select Ad_soyad,Tc_no,Tel_no,Doğum_tarihi,Sosyal_güvencesi,Cinsiyet from hasta_kayıt where kullanıcı_adı='" + textBox1.Text + "'ORDER BY Ad_soyad ASC ", baglanti);
             da.Fill(ds, "hasta_kayıt");
             dataGridView1.DataSource = ds.Tables["hasta_kayıt"];
             baglanti.Close();
@@ -80,7 +80,7 @@ namespace girisekrani
             komut.Connection = baglanti;
             komut.CommandText = "delete from hasta_kayıt where  Tc_no='" + textBox2.Text + "'";
             komut.ExecuteNonQuery();
-            OleDbDataAdapter da = new OleDbDataAdapter("Select Ad_soyad,Tc_no,Tel_no,Doğum_tarihi,Sosyal_güvencesi,Cinsiyet from hasta_kayıt where kullanıcı_adı='" + textBox1.Text + "'", baglanti);
+            OleDbDataAdapter da = new OleDbDataAdapter("Select Ad_soyad,Tc_no,Tel_no,Doğum_tarihi,Sosyal_güvencesi,Cinsiyet from hasta_kayıt where kullanıcı_adı='" + textBox1.Text + "'ORDER BY Ad_soyad ASC ", baglanti);
             da.Fill(ds, "hasta_kayıt");
             dataGridView1.DataSource = ds.Tables["hasta_kayıt"];
             baglanti.Close();
@@ -93,7 +93,7 @@ namespace girisekrani
             dataGridView1.Refresh();
             baglanti.Open();
             komut.Connection = baglanti;
-            OleDbDataAdapter da = new OleDbDataAdapter("Select Ad_soyad,Tc_no,Tel_no,Doğum_tarihi,Sosyal_güvencesi,Cinsiyet from hasta_kayıt where kullanıcı_adı='" + textBox1.Text + "'", baglanti);
+            OleDbDataAdapter da = new OleDbDataAdapter("Select Ad_soyad,Tc_no,Tel_no,Doğum_tarihi,Sosyal_güvencesi,Cinsiyet from hasta_kayıt where kullanıcı_adı='" + textBox1.Text + "'ORDER BY Ad_soyad ASC ", baglanti);
             da.Fill(ds, "hasta_kayıt");
             dataGridView1.DataSource = ds.Tables["hasta_kayıt"];
             baglanti.Close();

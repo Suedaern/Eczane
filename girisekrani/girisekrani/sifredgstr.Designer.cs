@@ -175,6 +175,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "sifredgstr";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Şifre Değiştir";
             this.Load += new System.EventHandler(this.sifredgstr_Load);
             this.ResumeLayout(false);

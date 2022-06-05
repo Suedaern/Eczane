@@ -204,6 +204,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ForeColor = System.Drawing.SystemColors.Desktop;
             this.Name = "hstkyt";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hasta Kayıt";
             this.Load += new System.EventHandler(this.hstkyt_Load);
             this.ResumeLayout(false);

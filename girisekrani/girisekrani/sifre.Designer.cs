@@ -127,6 +127,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "sifre";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Şifremi Unuttum ";
             this.Load += new System.EventHandler(this.sifre_Load);
             this.ResumeLayout(false);

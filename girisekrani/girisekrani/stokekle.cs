@@ -38,12 +38,11 @@ namespace girisekrani
             {
                 textBox4.Text = read[8].ToString();
             }
-
             int sayi2 = Convert.ToInt16(textBox2.Text);
             int sayi1 = Convert.ToInt16(textBox4.Text);
             int sonuç = sayi1 + sayi2;
             string sonuc = sonuç.ToString();
-            komut.CommandText = "UPDATE ilaç_kayıt set Fiyatı='" + textBox1.Text + "', Alınan_adet='" + sonuc + "' where İlaç_adı ='" + comboBox1.Text + "' AND Kullanıcı_adı='" + textBox3 +"'";
+            komut.CommandText = "Update ilaç_kayıt set Fiyatı='" + textBox1.Text + "', Alınan_adet='" + sonuc +"' where  Kullanıcı_adı='" + textBox3.Text + "' AND İlaç_adı='"+ comboBox1.Text +"'";
             komut.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Ekleme tamamlandı");

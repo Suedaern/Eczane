@@ -215,6 +215,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "kayit";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kayıt";
             this.Load += new System.EventHandler(this.kayit_Load);
             this.ResumeLayout(false);
